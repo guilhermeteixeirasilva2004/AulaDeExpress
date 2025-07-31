@@ -1,28 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vitrine de Produtos</title>
+  <link rel="stylesheet" href="vitrine.css">
+  <script src="frontend.js"></script>
 </head>
 <body>
-    <h1>hello world</h1>
-    <div id="nomes"></div>
+  <h1>Nossos Produtos</h1>
+  <div id="vitrine" class="vitrine"></div>
 </body>
-<script>
-    fetch('/pessoa').then(
-        (result)=>{
-             return result.json()
-        }
-    ).then(
-        (result) => {
-            result.map(item=>document.getElementById('nomes').innerHTML += item.nome + '<br>')
-        }
-    )
-    .catch((err)=> {
-        console.log(err)
-    })
-
-    
-</script>
 </html>
